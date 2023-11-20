@@ -29,8 +29,5 @@ vim.opt.isfname:append("@-@")
 -- Update
 vim.opt.updatetime = 50
 
--- Colour column
-vim.opt.colorcolumn = "80"
-
 -- Rust
 vim.g.rust_recommended_style = false

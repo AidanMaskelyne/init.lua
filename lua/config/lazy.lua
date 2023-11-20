@@ -11,14 +11,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-	{
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.4",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-	},
-	{ "rose-pine/neovim", name = "rose-pine" },
-	{ "navarasu/onedark.nvim" },
-})
+require("lazy").setup("plugins")

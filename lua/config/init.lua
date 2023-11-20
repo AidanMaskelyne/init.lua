@@ -1,3 +1,3 @@
-require("config.remap")
 require("config.lazy")
-require("config.onedark")
+require("config.remap")
+require("config.set")

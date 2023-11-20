@@ -5,7 +5,7 @@ vim.opt.relativenumber = true
 -- Indenting
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.opt.expandtab = false
 
 -- Backups & History
 vim.opt.swapfile = false

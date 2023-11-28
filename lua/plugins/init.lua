@@ -41,4 +41,20 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 	},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = { "ibl" },
+	},
+	{
+		"echasnovski/mini.indentscope",
+		version = false,
+	},
+	{
+		"echasnovski/mini.pairs",
+		version = false,
+	},
+	{
+		"echasnovski/mini.comment",
+		version = false,
+	},
 }

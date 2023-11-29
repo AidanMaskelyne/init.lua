@@ -28,3 +28,14 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader><leader>", function ()
     vim.cmd("so")
 end)
+
+-- Disable arrow keys for movement
+vim.keymap.set("n", "<Left>", "<nop>")
+vim.keymap.set("n", "<Up>", "<nop>")
+vim.keymap.set("n", "<Down>", "<nop>")
+vim.keymap.set("n", "<Right>", "<nop>")
+
+vim.keymap.set("i", "<Left>", "<nop>")
+vim.keymap.set("i", "<Up>", "<nop>")
+vim.keymap.set("i", "<Down>", "<nop>")
+vim.keymap.set("i", "<Right>", "<nop>")

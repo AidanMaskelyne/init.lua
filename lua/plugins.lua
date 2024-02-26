@@ -1,4 +1,10 @@
 return {
+	"navarasu/onedark.nvim",
+	"nvim-treesitter/playground",
+	"ThePrimeagen/harpoon",
+	"williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
+
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.4",
@@ -6,25 +12,12 @@ return {
 			"nvim-lua/plenary.nvim",
 		},
 	},
-	{
-		"navarasu/onedark.nvim",
-	},
+
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 	},
-	{
-		"nvim-treesitter/playground",
-	},
-	{
-		"ThePrimeagen/harpoon",
-	},
-	{
-		"mbbill/undotree",
-	},
-	{
-		"tpope/vim-fugitive",
-	},
+	
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v3.x",
@@ -35,26 +28,22 @@ return {
 			"L3MON4D3/LuaSnip",
 		},
 	},
-	{
-		"williamboman/mason.nvim",
-	},
-	{
-		"williamboman/mason-lspconfig.nvim",
-	},
+
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = { "ibl" },
 	},
+
 	{
-		"echasnovski/mini.indentscope",
-		version = false,
+		"nvim-lualine/lualine.nvim",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
 	},
+
 	{
-		"echasnovski/mini.pairs",
-		version = false,
+		"numToStr/Comment.nvim",
+		lazy = false,
 	},
-	{
-		"echasnovski/mini.comment",
-		version = false,
-	},
+
 }

@@ -1,4 +1,5 @@
-require("config")
+require("remap")
+require("set")
 
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -21,6 +22,6 @@ vim.g.netrw_winsize = 25
 
 -- Sets *.md files to have markdown syntax highlighting
 vim.api.nvim_create_autocmd({"BufNewFile", "BufFilePre", "BufRead"}, {
-    pattern = "*.md",
-    command = "set syntax=markdown"
+	pattern = "*.md",
+	command = "set syntax=markdown"
 })

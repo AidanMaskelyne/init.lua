@@ -3,13 +3,14 @@ require("ibl").setup({
 		char = "│",
 		tab_char = "│",
 	},
-	scope = { enabled = false },
+	scope = { 
+		enabled = false
+	},
 	exclude = {
 		filetypes = {
 			"help",
 			"lazy",
-			"mason",
+			"meson",
 		},
 	},
 })
-

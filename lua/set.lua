@@ -27,3 +27,5 @@ vim.opt.updatetime = 50
 vim.g.rust_recommended_style = false
 
 vim.g.neovide_transparency = 0.0
+
+vim.g.autoformat = false

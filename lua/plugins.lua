@@ -4,6 +4,7 @@ return {
 	"ThePrimeagen/harpoon",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
+	"m4xshen/autoclose.nvim",
 
 	{
 		"nvim-telescope/telescope.nvim",
@@ -17,7 +18,7 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 	},
-	
+
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v3.x",

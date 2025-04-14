@@ -29,3 +29,7 @@ vim.g.rust_recommended_style = false
 vim.g.neovide_transparency = 0.0
 
 vim.g.autoformat = false
+
+-- Zig
+vim.g.zig_fmt_parse_errors = 0
+vim.g.zig_fmt_autosave = 0

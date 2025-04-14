@@ -48,3 +48,5 @@ cmp.setup({
 		["<C-Space>"] = cmp.mapping.complete(),
 	})
 })
+
+require("lspconfig").zls.setup({})

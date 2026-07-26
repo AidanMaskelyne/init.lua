@@ -48,4 +48,15 @@ cmp.setup({
 	})
 })
 
-require("lspconfig").zls.setup({})
+vim.lsp.config("zls", {
+	cmd = { "zls" },
+	filetypes = { "zig" },
+	root_markers = { "build.zig" },
+	settings = {
+		zls = {
+			semantic_tokens = "partial",
+		}
+	}
+})
+
+vim.lsp.enable("zls")

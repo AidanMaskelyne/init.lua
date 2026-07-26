@@ -25,3 +25,10 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufFilePre", "BufRead"}, {
 	pattern = "*.md",
 	command = "set syntax=markdown"
 })
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+	pattern = {"*.zig", "*.zon"},
+	callback = function(ev)
+		vim.lsp.buf.format()
+	end
+})

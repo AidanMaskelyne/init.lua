@@ -1,21 +1,22 @@
 return {
 	"navarasu/onedark.nvim",
-	"nvim-treesitter/playground",
+	-- "nvim-treesitter/playground",
 	"ThePrimeagen/harpoon",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"m4xshen/autoclose.nvim",
 
 	{
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.4",
+		"nvim-telescope/telescope.nvim", version = "*",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
+			{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
 		},
 	},
 
 	{
 		"nvim-treesitter/nvim-treesitter",
+		lazy = false,
 		build = ":TSUpdate",
 	},
 
